@@ -1,44 +1,340 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>VidZapper</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>e10 — the studio index of e10 Infotech, Mumbai</title>
+<meta name="description" content="An index of e10 Infotech: an AI-powered software development studio in Mumbai building web apps, mobile apps and its own products since 2011. Every entry links to the full record on e10infotech.com.">
+<link rel="canonical" href="https://e10.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="e10 — the studio index of e10 Infotech, Mumbai">
+<meta property="og:description" content="Products and services of e10 Infotech, a software development company in Mumbai, indexed on one page with links to the full site.">
+<meta property="og:url" content="https://e10.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23012f73'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%2300aeef' text-anchor='middle'%3Ee10%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "e10 Infotech",
+  "alternateName": "e10",
+  "url": "https://www.e10infotech.com",
+  "foundingDate": "2011",
+  "description": "AI-powered software development company in Mumbai building custom software, web applications, mobile apps and its own product suite.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+  "telephone": "+91-86574-40720",
+  "sameAs": ["https://e10.github.io/"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#030b1c; --navy:#012f73; --blue:#003f9b; --cyan:#00aeef;
+    --text:#e8edf7; --muted:#8fa3c4; --rule:#16305c; --rule-soft:#0c2148;
+    --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+    --sans:"Inter Tight",-apple-system,"Segoe UI",Roboto,sans-serif;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink); color:var(--text);
+    font-family:var(--sans); font-size:1.0625rem; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(ellipse 90% 60% at 50% -10%, rgba(1,47,115,.55), transparent 70%);
+    background-repeat:no-repeat;
+  }
+  ::selection{background:var(--cyan);color:var(--ink)}
+  :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:2px}
+  html{scrollbar-color:var(--rule) var(--ink)}
+  body::-webkit-scrollbar{width:10px}
+  body::-webkit-scrollbar-track{background:var(--ink)}
+  body::-webkit-scrollbar-thumb{background:var(--rule);border-radius:5px}
+  body::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+
+  a{color:var(--cyan);text-decoration:underline;text-decoration-color:rgba(0,174,239,.35);text-underline-offset:.22em;text-decoration-thickness:1px;transition:text-decoration-color .25s var(--ease),color .25s var(--ease)}
+  a:hover{text-decoration-color:var(--cyan)}
+
+  .wrap{max-width:68rem;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+
+  header.site{display:flex;justify-content:space-between;align-items:baseline;padding-top:clamp(1.5rem,4vw,2.75rem)}
+  .wordmark{font-family:var(--serif);font-size:1.75rem;letter-spacing:-.02em;color:var(--text);text-decoration:none}
+  .wordmark i{color:var(--cyan);font-style:normal}
+  header.site nav a{font-size:.9375rem;color:var(--muted);text-decoration:none;margin-left:1.5rem}
+  header.site nav a:hover{color:var(--cyan)}
+
+  .hero{padding:clamp(4rem,11vh,8rem) 0 clamp(3rem,7vh,5rem)}
+  h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(2.6rem,7.2vw,5.5rem);
+    line-height:1.04;letter-spacing:-.03em;text-wrap:balance;max-width:18ch;
+  }
+  h1 em{font-style:italic;color:var(--cyan)}
+  .hero p{max-width:66ch;margin-top:2rem;font-size:clamp(1.0625rem,1.6vw,1.1875rem);color:var(--muted)}
+  .hero p strong{color:var(--text);font-weight:500}
+
+  .rule{height:1px;background:var(--rule);border:0;transform-origin:left;margin:0}
+  section{padding:clamp(3rem,7vh,5.5rem) 0}
+  h2{
+    font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.6vw,2.75rem);
+    letter-spacing:-.02em;line-height:1.1;margin-bottom:1.25rem;text-wrap:balance;
+  }
+  .lede{max-width:66ch;color:var(--muted);margin-bottom:.75rem}
+  .lede a{color:var(--cyan)}
+  .lede strong{color:var(--text);font-weight:500}
+
+  /* Product index */
+  .index{list-style:none;margin-top:2.5rem}
+  .index li{border-top:1px solid var(--rule-soft)}
+  .index li:last-child{border-bottom:1px solid var(--rule-soft)}
+  .index a{
+    display:grid;grid-template-columns:minmax(11rem,16rem) 1fr auto;gap:1.5rem;align-items:baseline;
+    padding:1.1rem .25rem;text-decoration:none;position:relative;
+  }
+  .index a::before{
+    content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;
+    background:var(--cyan);transform:scaleX(0);transform-origin:left;
+    transition:transform .5s var(--ease);
+  }
+  .index .name{
+    font-family:var(--serif);font-size:clamp(1.35rem,2.4vw,1.75rem);letter-spacing:-.01em;
+    color:var(--text);transition:transform .45s var(--ease),color .45s var(--ease);
+  }
+  .index .what{color:var(--muted);font-size:.9375rem;line-height:1.55;transition:color .45s var(--ease)}
+  .index .go{
+    color:var(--muted);font-size:.9375rem;justify-self:end;
+    transition:transform .45s var(--ease),color .45s var(--ease);
+  }
+  .index a:hover::before,.index a:focus-visible::before{transform:scaleX(1)}
+  .index a:hover .name,.index a:focus-visible .name{transform:translateX(.6rem);color:var(--cyan)}
+  .index a:hover .what{color:var(--text)}
+  .index a:hover .go{transform:translateX(.35rem);color:var(--cyan)}
+
+  /* Services */
+  .disciplines{margin-top:2.5rem;display:grid;gap:2.5rem}
+  .discipline{display:grid;grid-template-columns:minmax(11rem,16rem) 1fr;gap:1.5rem;align-items:start;border-top:1px solid var(--rule-soft);padding-top:1.6rem}
+  .discipline h3{font-family:var(--serif);font-weight:400;font-size:1.4rem;letter-spacing:-.01em;line-height:1.2}
+  .discipline p{color:var(--muted);font-size:.9375rem;line-height:2.15}
+  .discipline p a{white-space:nowrap;color:var(--text);text-decoration-color:rgba(143,163,196,.35)}
+  .discipline p a:hover{color:var(--cyan);text-decoration-color:var(--cyan)}
+  .discipline p .sep{color:var(--rule);padding:0 .45rem;user-select:none}
+
+  /* Method */
+  .method{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3rem);margin-top:2.5rem}
+  .method div{border-top:1px solid var(--rule-soft);padding-top:1.25rem}
+  .method h3{font-family:var(--serif);font-weight:400;font-size:1.35rem;margin-bottom:.5rem;letter-spacing:-.01em}
+  .method p{color:var(--muted);font-size:.9375rem}
+
+  /* Footer */
+  footer{padding:clamp(3rem,7vh,5rem) 0 3rem}
+  .foot-grid{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end}
+  .foot-grid .big{
+    font-family:var(--serif);font-size:clamp(1.75rem,3.6vw,2.6rem);letter-spacing:-.02em;line-height:1.15;max-width:22ch;text-wrap:balance;
+  }
+  .foot-meta{color:var(--muted);font-size:.9375rem;text-align:right;line-height:2}
+  .foot-meta a{color:var(--text)}
+  .colophon{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--rule-soft);color:var(--muted);font-size:.8125rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+  .colophon a{color:var(--muted)}
+  .colophon a:hover{color:var(--cyan)}
+
+  /* Reveal motion */
+  .rv{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+  .rule.rv{transform:scaleX(0);transition:transform 1.1s var(--ease)}
+  .rule.rv.in{transform:scaleX(1)}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .rv,.rule.rv{opacity:1;transform:none;transition:none}
+    .index a::before,.index .name,.index .go,.index .what{transition:none}
+  }
+
+  @media (max-width:44rem){
+    .index a{grid-template-columns:1fr;gap:.3rem;padding:1.15rem .1rem}
+    .index .go{display:none}
+    .discipline{grid-template-columns:1fr;gap:.75rem}
+    .method{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .foot-meta{text-align:left}
+    .discipline p a{white-space:normal}
+  }
+</style>
 </head>
 <body>
-  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="../" class="navbar-brand">e10</a>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="../what">What we do?</a>
-        </li>
-        <li>
-          <a href="../products">Products</a>
-        </li>
-        <li>
-          <a href="../services">Services</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="../about">About</a>
-        </li>
-      </ul>
+
+<div class="wrap">
+  <header class="site">
+    <a class="wordmark" href="https://e10.github.io/">e<i>10</i></a>
+    <nav aria-label="Page">
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="https://www.e10infotech.com" rel="noopener">e10infotech.com</a>
     </nav>
-  </div>
-</header>
+  </header>
+
+  <section class="hero">
+    <h1 class="rv">Software written in Mumbai, <em>run</em> everywhere.</h1>
+    <p class="rv">This is the public index of <strong>e10 Infotech</strong>, an
+    <a href="https://www.e10infotech.com" rel="noopener">AI-powered software development company in Mumbai</a>.
+    Since 2011 the studio has shipped more than two hundred projects for a hundred and fifty clients across
+    twenty-five countries, and kept building products of its own the whole time. Everything below is a pointer;
+    the full record lives at
+    <a href="https://www.e10infotech.com" rel="noopener">www.e10infotech.com</a>.</p>
+  </section>
+
+  <hr class="rule rv">
+
+  <section id="products" aria-labelledby="h-products">
+    <h2 id="h-products" class="rv">Products the studio runs itself</h2>
+    <p class="lede rv">A software agency that never operates its own software is guessing.
+    e10 designs, ships and operates these ten — the same hands that take on
+    <a href="https://www.e10infotech.com/services/custom-software-development" rel="noopener">custom software development</a> for clients
+    answer the support tickets here.</p>
+
+    <ol class="index">
+      <li class="rv"><a href="https://www.e10infotech.com/products/tintorch" rel="noopener">
+        <span class="name">TinTorch</span>
+        <span class="what">Integrated business software suite: CMS, HRMS, CRM, Docs, Jobs, Transfer and SEO tooling under one login.</span>
+        <span class="go">tintorch &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/tintorch-crm" rel="noopener">
+        <span class="name">TinTorch CRM</span>
+        <span class="what">Sales CRM software for small teams: contacts, leads, pipelines, deals, tasks and reporting without the enterprise bloat.</span>
+        <span class="go">crm &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/tintorch-hrms" rel="noopener">
+        <span class="name">TinTorch HRMS</span>
+        <span class="what">HR attendance and payroll software for Indian companies. Leave, shifts and TDS handled the way Indian payroll actually works.</span>
+        <span class="go">hrms &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/tintorch-transfer" rel="noopener">
+        <span class="name">TinTorch Transfer</span>
+        <span class="what">Secure large file transfer: one link, up to 20&nbsp;GB, password protection and auto-delete. Recipients need no account.</span>
+        <span class="go">transfer &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/arodya" rel="noopener">
+        <span class="name">Arodya</span>
+        <span class="what">Medical tourism coordination for India, covering NABH-accredited hospitals, honest cost estimates and travel logistics for international patients.</span>
+        <span class="go">arodya &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/lattice" rel="noopener">
+        <span class="name">Lattice.casa</span>
+        <span class="what">A knowledge graph of the internet: 14,300 sites mapped into 2.8 million relationships across 412 categories.</span>
+        <span class="go">lattice &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/n10" rel="noopener">
+        <span class="name">n10 Links</span>
+        <span class="what">URL shortener with analytics, branded short links, QR codes, landing pages and a REST API.</span>
+        <span class="go">n10 &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/createl" rel="noopener">
+        <span class="name">Createl</span>
+        <span class="what">Creator marketplace where verified brand deals meet performance tracking, without the inflated follower math.</span>
+        <span class="go">createl &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/duggy" rel="noopener">
+        <span class="name">Duggy</span>
+        <span class="what">Cricket club accounting app for members, contributions, match expenses and tournaments, settled without spreadsheet fights.</span>
+        <span class="go">duggy &rarr;</span></a></li>
+      <li class="rv"><a href="https://www.e10infotech.com/products/domains" rel="noopener">
+        <span class="name">Domains</span>
+        <span class="what">Domain registration and web hosting with a 99.9% uptime guarantee, run by people you can actually phone.</span>
+        <span class="go">domains &rarr;</span></a></li>
+    </ol>
+  </section>
+
+  <hr class="rule rv">
+
+  <section id="services" aria-labelledby="h-services">
+    <h2 id="h-services" class="rv">Sixty-seven services, seven disciplines</h2>
+    <p class="lede rv">Client work spans the whole build — from
+    <a href="https://www.e10infotech.com/services/ai-first-development" rel="noopener">AI-first development</a> to
+    <a href="https://www.e10infotech.com/services/digital-marketing" rel="noopener">digital marketing services</a> —
+    delivered by teams of two to four people who stay accountable by name. Each link opens the full service page on e10infotech.com.</p>
+
+    <div class="disciplines">
+      <div class="discipline rv">
+        <h3>AI engineering</h3>
+        <p><a href="https://www.e10infotech.com/services/ai-first-development" rel="noopener">AI-first development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/ai-agent-development" rel="noopener">AI agent development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/generative-ai-development" rel="noopener">generative AI development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/llm-integration-fine-tuning" rel="noopener">LLM integration &amp; fine-tuning</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/rag-development" rel="noopener">RAG &amp; knowledge systems</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/ai-chatbot-development" rel="noopener">AI chatbot development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/ai-workflow-automation" rel="noopener">AI workflow automation</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/mlops-ai-infrastructure" rel="noopener">MLOps &amp; AI infrastructure</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/ai-consulting-strategy" rel="noopener">AI consulting &amp; strategy</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/building-with-ai" rel="noopener">building with AI coding tools</a></p>
+      </div>
+      <div class="discipline rv">
+        <h3>Blockchain &amp; Web3</h3>
+        <p><a href="https://www.e10infotech.com/services/web3-development" rel="noopener">Web3 development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/blockchain-development" rel="noopener">blockchain development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/smart-contract-development" rel="noopener">smart contract development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/defi-development" rel="noopener">DeFi development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/token-development" rel="noopener">token development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/nft-marketplace-development" rel="noopener">NFT marketplace development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/crypto-wallet-development" rel="noopener">crypto wallet development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/crypto-exchange-development" rel="noopener">crypto exchange development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/dao-development" rel="noopener">DAO development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/rwa-tokenization" rel="noopener">RWA tokenization</a></p>
+      </div>
+      <div class="discipline rv">
+        <h3>Custom software &amp; platforms</h3>
+        <p><a href="https://www.e10infotech.com/services/custom-software-development" rel="noopener">custom software development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/software-development" rel="noopener">software development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/saas-product-development" rel="noopener">SaaS product development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/web-application-development" rel="noopener">web application development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/mobile-app-development" rel="noopener">mobile app development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/crm-development" rel="noopener">CRM development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/business-automation" rel="noopener">business automation</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/api-integration" rel="noopener">API integration</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/payment-gateway-integration" rel="noopener">payment gateway integration</a></p>
+      </div>
+      <div class="discipline rv">
+        <h3>Websites &amp; ecommerce</h3>
+        <p><a href="https://www.e10infotech.com/services/web-development" rel="noopener">web development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/website-design" rel="noopener">website design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/website-development" rel="noopener">website development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/wordpress-development" rel="noopener">WordPress development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/landing-page-design" rel="noopener">landing page design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/website-speed-optimization" rel="noopener">website speed optimization</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/website-maintenance" rel="noopener">website maintenance</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/ecommerce-development" rel="noopener">ecommerce development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/shopify-development" rel="noopener">Shopify development</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/woocommerce-development" rel="noopener">WooCommerce development</a></p>
+      </div>
+      <div class="discipline rv">
+        <h3>Design &amp; brand</h3>
+        <p><a href="https://www.e10infotech.com/services/branding-creative-design" rel="noopener">branding &amp; creative design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/ui-ux-design" rel="noopener">UI/UX design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/logo-design" rel="noopener">logo design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/brand-identity-design" rel="noopener">brand identity design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/graphic-design" rel="noopener">graphic design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/brochure-flyer-design" rel="noopener">brochure &amp; flyer design</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/social-media-creatives" rel="noopener">social media creatives</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/marketing-collateral" rel="noopener">marketing collateral</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/video-editing" rel="noopener">video editing</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/motion-graphics" rel="noopener">motion graphics</a></p>
+      </div>
+      <div class="discipline rv">
+        <h3>Digital marketing</h3>
+        <p><a href="https://www.e10infotech.com/services/digital-marketing" rel="noopener">digital marketing</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/seo-services" rel="noopener">SEO services</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/local-seo" rel="noopener">local SEO</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/google-ads-ppc" rel="noopener">Google Ads &amp; PPC</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/meta-ads" rel="noopener">Meta Ads</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/social-media-marketing" rel="noopener">social media marketing</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/social-media-management" rel="noopener">social media management</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/content-marketing" rel="noopener">content marketing</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/email-marketing" rel="noopener">email marketing</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/conversion-rate-optimization" rel="noopener">conversion rate optimization</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/online-reputation-management" rel="noopener">online reputation management</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/analytics-reporting" rel="noopener">analytics &amp; reporting</a></p>
+      </div>
+      <div class="discipline rv">
+        <h3>Growth &amp; revenue operations</h3>
+        <p><a href="https://www.e10infotech.com/services/lead-generation-growth-consulting" rel="noopener">lead generation &amp; growth consulting</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/lead-generation" rel="noopener">lead generation</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/marketing-strategy" rel="noopener">marketing strategy</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/sales-funnel-setup" rel="noopener">sales funnel setup</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/marketing-automation" rel="noopener">marketing automation</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/ecommerce-growth-consulting" rel="noopener">ecommerce growth consulting</a> <span class="sep">·</span> <a href="https://www.e10infotech.com/services/marketplace-listing-support" rel="noopener">marketplace listing support</a></p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule rv">
+
+  <section aria-labelledby="h-method">
+    <h2 id="h-method" class="rv">How a project actually runs</h2>
+    <p class="lede rv">No rate card, on purpose. A price produced before anyone has examined your
+    existing systems is a guess wearing a suit.</p>
+    <div class="method">
+      <div class="rv">
+        <h3>Discovery first</h3>
+        <p>The team reads your current systems, data and constraints before any estimate exists. Scope comes out of evidence, not a sales call.</p>
+      </div>
+      <div class="rv">
+        <h3>Small, named teams</h3>
+        <p>Two to four engineers per project out of a studio of about twenty-five. You know who is building what, and they know it&rsquo;s their name on it.</p>
+      </div>
+      <div class="rv">
+        <h3>Kept alive after launch</h3>
+        <p>Retainers cover the unglamorous part: monitoring, upgrades and the 2&nbsp;a.m. fix. Shipped software is the start, not the end.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule rv">
+
+  <footer>
+    <div class="foot-grid">
+      <p class="big rv">Have something worth building?
+      Talk to a <a href="https://www.e10infotech.com" rel="noopener">software development company in Mumbai</a> that ships its own.</p>
+      <p class="foot-meta rv">
+        Mumbai, Maharashtra, India<br>
+        <a href="tel:+918657440720">+91 86574 40720</a><br>
+        <a href="https://www.e10infotech.com" rel="noopener">www.e10infotech.com</a>
+      </p>
+    </div>
+    <div class="colophon">
+      <span>&copy; 2011&ndash;2026 e10 Infotech. Independent software studio since 2011.</span>
+      <span>This page is a static index hosted on <a href="https://github.com/e10/e10.github.io" rel="noopener">GitHub Pages</a>; the canonical site is <a href="https://www.e10infotech.com" rel="noopener">e10infotech.com</a>.</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+  (function(){
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:0.05});
+    var i=0;
+    document.querySelectorAll('.rv').forEach(function(el){
+      el.style.transitionDelay = Math.min((i++ % 8) * 45, 320) + 'ms';
+      io.observe(el);
+    });
+  })();
+</script>
 </body>
 </html>
